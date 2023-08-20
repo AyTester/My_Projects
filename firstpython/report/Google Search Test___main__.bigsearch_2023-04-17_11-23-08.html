@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Total Google Tests</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Total Google Tests</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-04-17 11:23:08</p>
+                <p class='attribute'><strong>Duration: </strong>16.41 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 6, Pass: 0, Error: 6</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.bigsearch</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_1_searchcodingcenter</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x0000000104e97ae8 chromedriver + 4958952
+1   chromedriver                        0x0000000104e8f7b3 chromedriver + 4925363
+2   chromedriver                        0x0000000104a511d6 chromedriver + 475606
+3   chromedriver                        0x0000000104a48deb chromedriver + 441835
+4   chromedriver                        0x0000000104a3a0ec chromedriver + 381164
+5   chromedriver                        0x0000000104a3bb41 chromedriver + 387905
+6   chromedriver                        0x0000000104a3a476 chromedriver + 382070
+7   chromedriver                        0x0000000104a3918b chromedriver + 377227
+8   chromedriver                        0x0000000104a38ffb chromedriver + 376827
+9   chromedriver                        0x0000000104a3781a chromedriver + 370714
+10  chromedriver                        0x0000000104a37bdd chromedriver + 371677
+11  chromedriver                        0x0000000104a534c6 chromedriver + 484550
+12  chromedriver                        0x0000000104ad68c1 chromedriver + 1022145
+13  chromedriver                        0x0000000104abac12 chromedriver + 908306
+14  chromedriver                        0x0000000104ad625b chromedriver + 1020507
+15  chromedriver                        0x0000000104aba9e3 chromedriver + 907747
+16  chromedriver                        0x0000000104a84aef chromedriver + 686831
+17  chromedriver                        0x0000000104a8600e chromedriver + 692238
+18  chromedriver                        0x0000000104e539ad chromedriver + 4680109
+19  chromedriver                        0x0000000104e58c12 chromedriver + 4701202
+20  chromedriver                        0x0000000104e5f79f chromedriver + 4728735
+21  chromedriver                        0x0000000104e59b7a chromedriver + 4705146
+22  chromedriver                        0x0000000104e2c27e chromedriver + 4518526
+23  chromedriver                        0x0000000104e79908 chromedriver + 4835592
+24  chromedriver                        0x0000000104e79a87 chromedriver + 4835975
+25  chromedriver                        0x0000000104e8900f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 13, in setUp
+    self.googletest.get("https://www.google.com/")
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x0000000104e97ae8 chromedriver + 4958952
+1   chromedriver                        0x0000000104e8f7b3 chromedriver + 4925363
+2   chromedriver                        0x0000000104a511d6 chromedriver + 475606
+3   chromedriver                        0x0000000104a48deb chromedriver + 441835
+4   chromedriver                        0x0000000104a3a0ec chromedriver + 381164
+5   chromedriver                        0x0000000104a3bb41 chromedriver + 387905
+6   chromedriver                        0x0000000104a3a476 chromedriver + 382070
+7   chromedriver                        0x0000000104a3918b chromedriver + 377227
+8   chromedriver                        0x0000000104a38ffb chromedriver + 376827
+9   chromedriver                        0x0000000104a3781a chromedriver + 370714
+10  chromedriver                        0x0000000104a37bdd chromedriver + 371677
+11  chromedriver                        0x0000000104a534c6 chromedriver + 484550
+12  chromedriver                        0x0000000104ad68c1 chromedriver + 1022145
+13  chromedriver                        0x0000000104abac12 chromedriver + 908306
+14  chromedriver                        0x0000000104ad625b chromedriver + 1020507
+15  chromedriver                        0x0000000104aba9e3 chromedriver + 907747
+16  chromedriver                        0x0000000104a84aef chromedriver + 686831
+17  chromedriver                        0x0000000104a8600e chromedriver + 692238
+18  chromedriver                        0x0000000104e539ad chromedriver + 4680109
+19  chromedriver                        0x0000000104e58c12 chromedriver + 4701202
+20  chromedriver                        0x0000000104e5f79f chromedriver + 4728735
+21  chromedriver                        0x0000000104e59b7a chromedriver + 4705146
+22  chromedriver                        0x0000000104e2c27e chromedriver + 4518526
+23  chromedriver                        0x0000000104e79908 chromedriver + 4835592
+24  chromedriver                        0x0000000104e79a87 chromedriver + 4835975
+25  chromedriver                        0x0000000104e8900f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+
+/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py:11: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.googletest = webdriver.Chrome("C:/seleniumdriver/chromedriver.exe")
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_2_searchbestmusicstar</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x000000010ad34ae8 chromedriver + 4958952
+1   chromedriver                        0x000000010ad2c7b3 chromedriver + 4925363
+2   chromedriver                        0x000000010a8ee1d6 chromedriver + 475606
+3   chromedriver                        0x000000010a8e5deb chromedriver + 441835
+4   chromedriver                        0x000000010a8d70ec chromedriver + 381164
+5   chromedriver                        0x000000010a8d8b41 chromedriver + 387905
+6   chromedriver                        0x000000010a8d7476 chromedriver + 382070
+7   chromedriver                        0x000000010a8d618b chromedriver + 377227
+8   chromedriver                        0x000000010a8d5ffb chromedriver + 376827
+9   chromedriver                        0x000000010a8d481a chromedriver + 370714
+10  chromedriver                        0x000000010a8d4bdd chromedriver + 371677
+11  chromedriver                        0x000000010a8f04c6 chromedriver + 484550
+12  chromedriver                        0x000000010a9738c1 chromedriver + 1022145
+13  chromedriver                        0x000000010a957c12 chromedriver + 908306
+14  chromedriver                        0x000000010a97325b chromedriver + 1020507
+15  chromedriver                        0x000000010a9579e3 chromedriver + 907747
+16  chromedriver                        0x000000010a921aef chromedriver + 686831
+17  chromedriver                        0x000000010a92300e chromedriver + 692238
+18  chromedriver                        0x000000010acf09ad chromedriver + 4680109
+19  chromedriver                        0x000000010acf5c12 chromedriver + 4701202
+20  chromedriver                        0x000000010acfc79f chromedriver + 4728735
+21  chromedriver                        0x000000010acf6b7a chromedriver + 4705146
+22  chromedriver                        0x000000010acc927e chromedriver + 4518526
+23  chromedriver                        0x000000010ad16908 chromedriver + 4835592
+24  chromedriver                        0x000000010ad16a87 chromedriver + 4835975
+25  chromedriver                        0x000000010ad2600f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 13, in setUp
+    self.googletest.get("https://www.google.com/")
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x000000010ad34ae8 chromedriver + 4958952
+1   chromedriver                        0x000000010ad2c7b3 chromedriver + 4925363
+2   chromedriver                        0x000000010a8ee1d6 chromedriver + 475606
+3   chromedriver                        0x000000010a8e5deb chromedriver + 441835
+4   chromedriver                        0x000000010a8d70ec chromedriver + 381164
+5   chromedriver                        0x000000010a8d8b41 chromedriver + 387905
+6   chromedriver                        0x000000010a8d7476 chromedriver + 382070
+7   chromedriver                        0x000000010a8d618b chromedriver + 377227
+8   chromedriver                        0x000000010a8d5ffb chromedriver + 376827
+9   chromedriver                        0x000000010a8d481a chromedriver + 370714
+10  chromedriver                        0x000000010a8d4bdd chromedriver + 371677
+11  chromedriver                        0x000000010a8f04c6 chromedriver + 484550
+12  chromedriver                        0x000000010a9738c1 chromedriver + 1022145
+13  chromedriver                        0x000000010a957c12 chromedriver + 908306
+14  chromedriver                        0x000000010a97325b chromedriver + 1020507
+15  chromedriver                        0x000000010a9579e3 chromedriver + 907747
+16  chromedriver                        0x000000010a921aef chromedriver + 686831
+17  chromedriver                        0x000000010a92300e chromedriver + 692238
+18  chromedriver                        0x000000010acf09ad chromedriver + 4680109
+19  chromedriver                        0x000000010acf5c12 chromedriver + 4701202
+20  chromedriver                        0x000000010acfc79f chromedriver + 4728735
+21  chromedriver                        0x000000010acf6b7a chromedriver + 4705146
+22  chromedriver                        0x000000010acc927e chromedriver + 4518526
+23  chromedriver                        0x000000010ad16908 chromedriver + 4835592
+24  chromedriver                        0x000000010ad16a87 chromedriver + 4835975
+25  chromedriver                        0x000000010ad2600f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_3_searchrichestmen</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x000000010c86aae8 chromedriver + 4958952
+1   chromedriver                        0x000000010c8627b3 chromedriver + 4925363
+2   chromedriver                        0x000000010c4241d6 chromedriver + 475606
+3   chromedriver                        0x000000010c41bdeb chromedriver + 441835
+4   chromedriver                        0x000000010c40d0ec chromedriver + 381164
+5   chromedriver                        0x000000010c40eb41 chromedriver + 387905
+6   chromedriver                        0x000000010c40d476 chromedriver + 382070
+7   chromedriver                        0x000000010c40c18b chromedriver + 377227
+8   chromedriver                        0x000000010c40bffb chromedriver + 376827
+9   chromedriver                        0x000000010c40a81a chromedriver + 370714
+10  chromedriver                        0x000000010c40abdd chromedriver + 371677
+11  chromedriver                        0x000000010c4264c6 chromedriver + 484550
+12  chromedriver                        0x000000010c4a98c1 chromedriver + 1022145
+13  chromedriver                        0x000000010c48dc12 chromedriver + 908306
+14  chromedriver                        0x000000010c4a925b chromedriver + 1020507
+15  chromedriver                        0x000000010c48d9e3 chromedriver + 907747
+16  chromedriver                        0x000000010c457aef chromedriver + 686831
+17  chromedriver                        0x000000010c45900e chromedriver + 692238
+18  chromedriver                        0x000000010c8269ad chromedriver + 4680109
+19  chromedriver                        0x000000010c82bc12 chromedriver + 4701202
+20  chromedriver                        0x000000010c83279f chromedriver + 4728735
+21  chromedriver                        0x000000010c82cb7a chromedriver + 4705146
+22  chromedriver                        0x000000010c7ff27e chromedriver + 4518526
+23  chromedriver                        0x000000010c84c908 chromedriver + 4835592
+24  chromedriver                        0x000000010c84ca87 chromedriver + 4835975
+25  chromedriver                        0x000000010c85c00f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 13, in setUp
+    self.googletest.get("https://www.google.com/")
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x000000010c86aae8 chromedriver + 4958952
+1   chromedriver                        0x000000010c8627b3 chromedriver + 4925363
+2   chromedriver                        0x000000010c4241d6 chromedriver + 475606
+3   chromedriver                        0x000000010c41bdeb chromedriver + 441835
+4   chromedriver                        0x000000010c40d0ec chromedriver + 381164
+5   chromedriver                        0x000000010c40eb41 chromedriver + 387905
+6   chromedriver                        0x000000010c40d476 chromedriver + 382070
+7   chromedriver                        0x000000010c40c18b chromedriver + 377227
+8   chromedriver                        0x000000010c40bffb chromedriver + 376827
+9   chromedriver                        0x000000010c40a81a chromedriver + 370714
+10  chromedriver                        0x000000010c40abdd chromedriver + 371677
+11  chromedriver                        0x000000010c4264c6 chromedriver + 484550
+12  chromedriver                        0x000000010c4a98c1 chromedriver + 1022145
+13  chromedriver                        0x000000010c48dc12 chromedriver + 908306
+14  chromedriver                        0x000000010c4a925b chromedriver + 1020507
+15  chromedriver                        0x000000010c48d9e3 chromedriver + 907747
+16  chromedriver                        0x000000010c457aef chromedriver + 686831
+17  chromedriver                        0x000000010c45900e chromedriver + 692238
+18  chromedriver                        0x000000010c8269ad chromedriver + 4680109
+19  chromedriver                        0x000000010c82bc12 chromedriver + 4701202
+20  chromedriver                        0x000000010c83279f chromedriver + 4728735
+21  chromedriver                        0x000000010c82cb7a chromedriver + 4705146
+22  chromedriver                        0x000000010c7ff27e chromedriver + 4518526
+23  chromedriver                        0x000000010c84c908 chromedriver + 4835592
+24  chromedriver                        0x000000010c84ca87 chromedriver + 4835975
+25  chromedriver                        0x000000010c85c00f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_4_OS</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x0000000107c3aae8 chromedriver + 4958952
+1   chromedriver                        0x0000000107c327b3 chromedriver + 4925363
+2   chromedriver                        0x00000001077f41d6 chromedriver + 475606
+3   chromedriver                        0x00000001077ebdeb chromedriver + 441835
+4   chromedriver                        0x00000001077dd0ec chromedriver + 381164
+5   chromedriver                        0x00000001077deb41 chromedriver + 387905
+6   chromedriver                        0x00000001077dd476 chromedriver + 382070
+7   chromedriver                        0x00000001077dc18b chromedriver + 377227
+8   chromedriver                        0x00000001077dbffb chromedriver + 376827
+9   chromedriver                        0x00000001077da81a chromedriver + 370714
+10  chromedriver                        0x00000001077dabdd chromedriver + 371677
+11  chromedriver                        0x00000001077f64c6 chromedriver + 484550
+12  chromedriver                        0x00000001078798c1 chromedriver + 1022145
+13  chromedriver                        0x000000010785dc12 chromedriver + 908306
+14  chromedriver                        0x000000010787925b chromedriver + 1020507
+15  chromedriver                        0x000000010785d9e3 chromedriver + 907747
+16  chromedriver                        0x0000000107827aef chromedriver + 686831
+17  chromedriver                        0x000000010782900e chromedriver + 692238
+18  chromedriver                        0x0000000107bf69ad chromedriver + 4680109
+19  chromedriver                        0x0000000107bfbc12 chromedriver + 4701202
+20  chromedriver                        0x0000000107c0279f chromedriver + 4728735
+21  chromedriver                        0x0000000107bfcb7a chromedriver + 4705146
+22  chromedriver                        0x0000000107bcf27e chromedriver + 4518526
+23  chromedriver                        0x0000000107c1c908 chromedriver + 4835592
+24  chromedriver                        0x0000000107c1ca87 chromedriver + 4835975
+25  chromedriver                        0x0000000107c2c00f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 13, in setUp
+    self.googletest.get("https://www.google.com/")
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x0000000107c3aae8 chromedriver + 4958952
+1   chromedriver                        0x0000000107c327b3 chromedriver + 4925363
+2   chromedriver                        0x00000001077f41d6 chromedriver + 475606
+3   chromedriver                        0x00000001077ebdeb chromedriver + 441835
+4   chromedriver                        0x00000001077dd0ec chromedriver + 381164
+5   chromedriver                        0x00000001077deb41 chromedriver + 387905
+6   chromedriver                        0x00000001077dd476 chromedriver + 382070
+7   chromedriver                        0x00000001077dc18b chromedriver + 377227
+8   chromedriver                        0x00000001077dbffb chromedriver + 376827
+9   chromedriver                        0x00000001077da81a chromedriver + 370714
+10  chromedriver                        0x00000001077dabdd chromedriver + 371677
+11  chromedriver                        0x00000001077f64c6 chromedriver + 484550
+12  chromedriver                        0x00000001078798c1 chromedriver + 1022145
+13  chromedriver                        0x000000010785dc12 chromedriver + 908306
+14  chromedriver                        0x000000010787925b chromedriver + 1020507
+15  chromedriver                        0x000000010785d9e3 chromedriver + 907747
+16  chromedriver                        0x0000000107827aef chromedriver + 686831
+17  chromedriver                        0x000000010782900e chromedriver + 692238
+18  chromedriver                        0x0000000107bf69ad chromedriver + 4680109
+19  chromedriver                        0x0000000107bfbc12 chromedriver + 4701202
+20  chromedriver                        0x0000000107c0279f chromedriver + 4728735
+21  chromedriver                        0x0000000107bfcb7a chromedriver + 4705146
+22  chromedriver                        0x0000000107bcf27e chromedriver + 4518526
+23  chromedriver                        0x0000000107c1c908 chromedriver + 4835592
+24  chromedriver                        0x0000000107c1ca87 chromedriver + 4835975
+25  chromedriver                        0x0000000107c2c00f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_5_testingtools</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x0000000109857ae8 chromedriver + 4958952
+1   chromedriver                        0x000000010984f7b3 chromedriver + 4925363
+2   chromedriver                        0x00000001094111d6 chromedriver + 475606
+3   chromedriver                        0x0000000109408deb chromedriver + 441835
+4   chromedriver                        0x00000001093fa0ec chromedriver + 381164
+5   chromedriver                        0x00000001093fbb41 chromedriver + 387905
+6   chromedriver                        0x00000001093fa476 chromedriver + 382070
+7   chromedriver                        0x00000001093f918b chromedriver + 377227
+8   chromedriver                        0x00000001093f8ffb chromedriver + 376827
+9   chromedriver                        0x00000001093f781a chromedriver + 370714
+10  chromedriver                        0x00000001093f7bdd chromedriver + 371677
+11  chromedriver                        0x00000001094134c6 chromedriver + 484550
+12  chromedriver                        0x00000001094968c1 chromedriver + 1022145
+13  chromedriver                        0x000000010947ac12 chromedriver + 908306
+14  chromedriver                        0x000000010949625b chromedriver + 1020507
+15  chromedriver                        0x000000010947a9e3 chromedriver + 907747
+16  chromedriver                        0x0000000109444aef chromedriver + 686831
+17  chromedriver                        0x000000010944600e chromedriver + 692238
+18  chromedriver                        0x00000001098139ad chromedriver + 4680109
+19  chromedriver                        0x0000000109818c12 chromedriver + 4701202
+20  chromedriver                        0x000000010981f79f chromedriver + 4728735
+21  chromedriver                        0x0000000109819b7a chromedriver + 4705146
+22  chromedriver                        0x00000001097ec27e chromedriver + 4518526
+23  chromedriver                        0x0000000109839908 chromedriver + 4835592
+24  chromedriver                        0x0000000109839a87 chromedriver + 4835975
+25  chromedriver                        0x000000010984900f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 13, in setUp
+    self.googletest.get("https://www.google.com/")
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x0000000109857ae8 chromedriver + 4958952
+1   chromedriver                        0x000000010984f7b3 chromedriver + 4925363
+2   chromedriver                        0x00000001094111d6 chromedriver + 475606
+3   chromedriver                        0x0000000109408deb chromedriver + 441835
+4   chromedriver                        0x00000001093fa0ec chromedriver + 381164
+5   chromedriver                        0x00000001093fbb41 chromedriver + 387905
+6   chromedriver                        0x00000001093fa476 chromedriver + 382070
+7   chromedriver                        0x00000001093f918b chromedriver + 377227
+8   chromedriver                        0x00000001093f8ffb chromedriver + 376827
+9   chromedriver                        0x00000001093f781a chromedriver + 370714
+10  chromedriver                        0x00000001093f7bdd chromedriver + 371677
+11  chromedriver                        0x00000001094134c6 chromedriver + 484550
+12  chromedriver                        0x00000001094968c1 chromedriver + 1022145
+13  chromedriver                        0x000000010947ac12 chromedriver + 908306
+14  chromedriver                        0x000000010949625b chromedriver + 1020507
+15  chromedriver                        0x000000010947a9e3 chromedriver + 907747
+16  chromedriver                        0x0000000109444aef chromedriver + 686831
+17  chromedriver                        0x000000010944600e chromedriver + 692238
+18  chromedriver                        0x00000001098139ad chromedriver + 4680109
+19  chromedriver                        0x0000000109818c12 chromedriver + 4701202
+20  chromedriver                        0x000000010981f79f chromedriver + 4728735
+21  chromedriver                        0x0000000109819b7a chromedriver + 4705146
+22  chromedriver                        0x00000001097ec27e chromedriver + 4518526
+23  chromedriver                        0x0000000109839908 chromedriver + 4835592
+24  chromedriver                        0x0000000109839a87 chromedriver + 4835975
+25  chromedriver                        0x000000010984900f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_6_ASI</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x00000001059a9ae8 chromedriver + 4958952
+1   chromedriver                        0x00000001059a17b3 chromedriver + 4925363
+2   chromedriver                        0x00000001055631d6 chromedriver + 475606
+3   chromedriver                        0x000000010555adeb chromedriver + 441835
+4   chromedriver                        0x000000010554c0ec chromedriver + 381164
+5   chromedriver                        0x000000010554db41 chromedriver + 387905
+6   chromedriver                        0x000000010554c476 chromedriver + 382070
+7   chromedriver                        0x000000010554b18b chromedriver + 377227
+8   chromedriver                        0x000000010554affb chromedriver + 376827
+9   chromedriver                        0x000000010554981a chromedriver + 370714
+10  chromedriver                        0x0000000105549bdd chromedriver + 371677
+11  chromedriver                        0x00000001055654c6 chromedriver + 484550
+12  chromedriver                        0x00000001055e88c1 chromedriver + 1022145
+13  chromedriver                        0x00000001055ccc12 chromedriver + 908306
+14  chromedriver                        0x00000001055e825b chromedriver + 1020507
+15  chromedriver                        0x00000001055cc9e3 chromedriver + 907747
+16  chromedriver                        0x0000000105596aef chromedriver + 686831
+17  chromedriver                        0x000000010559800e chromedriver + 692238
+18  chromedriver                        0x00000001059659ad chromedriver + 4680109
+19  chromedriver                        0x000000010596ac12 chromedriver + 4701202
+20  chromedriver                        0x000000010597179f chromedriver + 4728735
+21  chromedriver                        0x000000010596bb7a chromedriver + 4705146
+22  chromedriver                        0x000000010593e27e chromedriver + 4518526
+23  chromedriver                        0x000000010598b908 chromedriver + 4835592
+24  chromedriver                        0x000000010598ba87 chromedriver + 4835975
+25  chromedriver                        0x000000010599b00f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 13, in setUp
+    self.googletest.get("https://www.google.com/")
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x00000001059a9ae8 chromedriver + 4958952
+1   chromedriver                        0x00000001059a17b3 chromedriver + 4925363
+2   chromedriver                        0x00000001055631d6 chromedriver + 475606
+3   chromedriver                        0x000000010555adeb chromedriver + 441835
+4   chromedriver                        0x000000010554c0ec chromedriver + 381164
+5   chromedriver                        0x000000010554db41 chromedriver + 387905
+6   chromedriver                        0x000000010554c476 chromedriver + 382070
+7   chromedriver                        0x000000010554b18b chromedriver + 377227
+8   chromedriver                        0x000000010554affb chromedriver + 376827
+9   chromedriver                        0x000000010554981a chromedriver + 370714
+10  chromedriver                        0x0000000105549bdd chromedriver + 371677
+11  chromedriver                        0x00000001055654c6 chromedriver + 484550
+12  chromedriver                        0x00000001055e88c1 chromedriver + 1022145
+13  chromedriver                        0x00000001055ccc12 chromedriver + 908306
+14  chromedriver                        0x00000001055e825b chromedriver + 1020507
+15  chromedriver                        0x00000001055cc9e3 chromedriver + 907747
+16  chromedriver                        0x0000000105596aef chromedriver + 686831
+17  chromedriver                        0x000000010559800e chromedriver + 692238
+18  chromedriver                        0x00000001059659ad chromedriver + 4680109
+19  chromedriver                        0x000000010596ac12 chromedriver + 4701202
+20  chromedriver                        0x000000010597179f chromedriver + 4728735
+21  chromedriver                        0x000000010596bb7a chromedriver + 4705146
+22  chromedriver                        0x000000010593e27e chromedriver + 4518526
+23  chromedriver                        0x000000010598b908 chromedriver + 4835592
+24  chromedriver                        0x000000010598ba87 chromedriver + 4835975
+25  chromedriver                        0x000000010599b00f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff814b6c259 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff814b67c7b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 6, Pass: 0, Error: 6 -- Duration: 16.41 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

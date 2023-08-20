@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Total Google Tests</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Total Google Tests</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-04-12 20:00:21</p>
+                <p class='attribute'><strong>Duration: </strong>205.22 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 6, Pass: 1, Error: 5</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.bigsearch</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_1_searchcodingcenter</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x000000010f3faae8 chromedriver + 4958952
+1   chromedriver                        0x000000010f3f27b3 chromedriver + 4925363
+2   chromedriver                        0x000000010efb41d6 chromedriver + 475606
+3   chromedriver                        0x000000010ef9c44f chromedriver + 377935
+4   chromedriver                        0x000000010ef9bffb chromedriver + 376827
+5   chromedriver                        0x000000010ef9a81a chromedriver + 370714
+6   chromedriver                        0x000000010ef9ad4c chromedriver + 372044
+7   chromedriver                        0x000000010efa9b0b chromedriver + 432907
+8   chromedriver                        0x000000010efab412 chromedriver + 439314
+9   chromedriver                        0x000000010efbcd74 chromedriver + 511348
+10  chromedriver                        0x000000010efc22fb chromedriver + 533243
+11  chromedriver                        0x000000010ef9b1a8 chromedriver + 373160
+12  chromedriver                        0x000000010efbcbbf chromedriver + 510911
+13  chromedriver                        0x000000010f0394a4 chromedriver + 1021092
+14  chromedriver                        0x000000010f01d9e3 chromedriver + 907747
+15  chromedriver                        0x000000010efe7aef chromedriver + 686831
+16  chromedriver                        0x000000010efe900e chromedriver + 692238
+17  chromedriver                        0x000000010f3b69ad chromedriver + 4680109
+18  chromedriver                        0x000000010f3bbc12 chromedriver + 4701202
+19  chromedriver                        0x000000010f3c279f chromedriver + 4728735
+20  chromedriver                        0x000000010f3bcb7a chromedriver + 4705146
+21  chromedriver                        0x000000010f38f27e chromedriver + 4518526
+22  chromedriver                        0x000000010f3dc908 chromedriver + 4835592
+23  chromedriver                        0x000000010f3dca87 chromedriver + 4835975
+24  chromedriver                        0x000000010f3ec00f chromedriver + 4898831
+25  libsystem_pthread.dylib             0x00007ff81b609259 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81b604c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 19, in test_1_searchcodingcenter
+    self.googletest.find_element("name", "q").send_keys(Keys.ENTER)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webelement.py", line 231, in send_keys
+    self._execute(
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webelement.py", line 404, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x000000010f3faae8 chromedriver + 4958952
+1   chromedriver                        0x000000010f3f27b3 chromedriver + 4925363
+2   chromedriver                        0x000000010efb41d6 chromedriver + 475606
+3   chromedriver                        0x000000010ef9c44f chromedriver + 377935
+4   chromedriver                        0x000000010ef9bffb chromedriver + 376827
+5   chromedriver                        0x000000010ef9a81a chromedriver + 370714
+6   chromedriver                        0x000000010ef9ad4c chromedriver + 372044
+7   chromedriver                        0x000000010efa9b0b chromedriver + 432907
+8   chromedriver                        0x000000010efab412 chromedriver + 439314
+9   chromedriver                        0x000000010efbcd74 chromedriver + 511348
+10  chromedriver                        0x000000010efc22fb chromedriver + 533243
+11  chromedriver                        0x000000010ef9b1a8 chromedriver + 373160
+12  chromedriver                        0x000000010efbcbbf chromedriver + 510911
+13  chromedriver                        0x000000010f0394a4 chromedriver + 1021092
+14  chromedriver                        0x000000010f01d9e3 chromedriver + 907747
+15  chromedriver                        0x000000010efe7aef chromedriver + 686831
+16  chromedriver                        0x000000010efe900e chromedriver + 692238
+17  chromedriver                        0x000000010f3b69ad chromedriver + 4680109
+18  chromedriver                        0x000000010f3bbc12 chromedriver + 4701202
+19  chromedriver                        0x000000010f3c279f chromedriver + 4728735
+20  chromedriver                        0x000000010f3bcb7a chromedriver + 4705146
+21  chromedriver                        0x000000010f38f27e chromedriver + 4518526
+22  chromedriver                        0x000000010f3dc908 chromedriver + 4835592
+23  chromedriver                        0x000000010f3dca87 chromedriver + 4835975
+24  chromedriver                        0x000000010f3ec00f chromedriver + 4898831
+25  libsystem_pthread.dylib             0x00007ff81b609259 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81b604c7b thread_start + 15
+
+/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py:11: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.googletest = webdriver.Chrome("C:/seleniumdriver/chromedriver.exe")
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_2_searchbestmusicstar</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x00000001098ceae8 chromedriver + 4958952
+1   chromedriver                        0x00000001098c67b3 chromedriver + 4925363
+2   chromedriver                        0x00000001094881d6 chromedriver + 475606
+3   chromedriver                        0x000000010947044f chromedriver + 377935
+4   chromedriver                        0x000000010946fffb chromedriver + 376827
+5   chromedriver                        0x000000010946e81a chromedriver + 370714
+6   chromedriver                        0x000000010946ed4c chromedriver + 372044
+7   chromedriver                        0x000000010947db0b chromedriver + 432907
+8   chromedriver                        0x000000010947f412 chromedriver + 439314
+9   chromedriver                        0x0000000109490d74 chromedriver + 511348
+10  chromedriver                        0x00000001094962fb chromedriver + 533243
+11  chromedriver                        0x000000010946f1a8 chromedriver + 373160
+12  chromedriver                        0x0000000109490bbf chromedriver + 510911
+13  chromedriver                        0x000000010950d4a4 chromedriver + 1021092
+14  chromedriver                        0x00000001094f19e3 chromedriver + 907747
+15  chromedriver                        0x00000001094bbaef chromedriver + 686831
+16  chromedriver                        0x00000001094bd00e chromedriver + 692238
+17  chromedriver                        0x000000010988a9ad chromedriver + 4680109
+18  chromedriver                        0x000000010988fc12 chromedriver + 4701202
+19  chromedriver                        0x000000010989679f chromedriver + 4728735
+20  chromedriver                        0x0000000109890b7a chromedriver + 4705146
+21  chromedriver                        0x000000010986327e chromedriver + 4518526
+22  chromedriver                        0x00000001098b0908 chromedriver + 4835592
+23  chromedriver                        0x00000001098b0a87 chromedriver + 4835975
+24  chromedriver                        0x00000001098c000f chromedriver + 4898831
+25  libsystem_pthread.dylib             0x00007ff81b609259 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81b604c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 23, in test_2_searchbestmusicstar
+    self.googletest.find_element("name", "q").send_keys(Keys.ENTER)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webelement.py", line 231, in send_keys
+    self._execute(
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webelement.py", line 404, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x00000001098ceae8 chromedriver + 4958952
+1   chromedriver                        0x00000001098c67b3 chromedriver + 4925363
+2   chromedriver                        0x00000001094881d6 chromedriver + 475606
+3   chromedriver                        0x000000010947044f chromedriver + 377935
+4   chromedriver                        0x000000010946fffb chromedriver + 376827
+5   chromedriver                        0x000000010946e81a chromedriver + 370714
+6   chromedriver                        0x000000010946ed4c chromedriver + 372044
+7   chromedriver                        0x000000010947db0b chromedriver + 432907
+8   chromedriver                        0x000000010947f412 chromedriver + 439314
+9   chromedriver                        0x0000000109490d74 chromedriver + 511348
+10  chromedriver                        0x00000001094962fb chromedriver + 533243
+11  chromedriver                        0x000000010946f1a8 chromedriver + 373160
+12  chromedriver                        0x0000000109490bbf chromedriver + 510911
+13  chromedriver                        0x000000010950d4a4 chromedriver + 1021092
+14  chromedriver                        0x00000001094f19e3 chromedriver + 907747
+15  chromedriver                        0x00000001094bbaef chromedriver + 686831
+16  chromedriver                        0x00000001094bd00e chromedriver + 692238
+17  chromedriver                        0x000000010988a9ad chromedriver + 4680109
+18  chromedriver                        0x000000010988fc12 chromedriver + 4701202
+19  chromedriver                        0x000000010989679f chromedriver + 4728735
+20  chromedriver                        0x0000000109890b7a chromedriver + 4705146
+21  chromedriver                        0x000000010986327e chromedriver + 4518526
+22  chromedriver                        0x00000001098b0908 chromedriver + 4835592
+23  chromedriver                        0x00000001098b0a87 chromedriver + 4835975
+24  chromedriver                        0x00000001098c000f chromedriver + 4898831
+25  libsystem_pthread.dylib             0x00007ff81b609259 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81b604c7b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_3_searchrichestmen</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Test Completed Successfully!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_4_OS</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x000000010f293ae8 chromedriver + 4958952
+1   chromedriver                        0x000000010f28b7b3 chromedriver + 4925363
+2   chromedriver                        0x000000010ee4d1d6 chromedriver + 475606
+3   chromedriver                        0x000000010ee3544f chromedriver + 377935
+4   chromedriver                        0x000000010ee34ffb chromedriver + 376827
+5   chromedriver                        0x000000010ee3381a chromedriver + 370714
+6   chromedriver                        0x000000010ee33d4c chromedriver + 372044
+7   chromedriver                        0x000000010ee42b0b chromedriver + 432907
+8   chromedriver                        0x000000010ee44412 chromedriver + 439314
+9   chromedriver                        0x000000010ee55d74 chromedriver + 511348
+10  chromedriver                        0x000000010ee5b2fb chromedriver + 533243
+11  chromedriver                        0x000000010ee341a8 chromedriver + 373160
+12  chromedriver                        0x000000010ee55bbf chromedriver + 510911
+13  chromedriver                        0x000000010eed24a4 chromedriver + 1021092
+14  chromedriver                        0x000000010eeb69e3 chromedriver + 907747
+15  chromedriver                        0x000000010ee80aef chromedriver + 686831
+16  chromedriver                        0x000000010ee8200e chromedriver + 692238
+17  chromedriver                        0x000000010f24f9ad chromedriver + 4680109
+18  chromedriver                        0x000000010f254c12 chromedriver + 4701202
+19  chromedriver                        0x000000010f25b79f chromedriver + 4728735
+20  chromedriver                        0x000000010f255b7a chromedriver + 4705146
+21  chromedriver                        0x000000010f22827e chromedriver + 4518526
+22  chromedriver                        0x000000010f275908 chromedriver + 4835592
+23  chromedriver                        0x000000010f275a87 chromedriver + 4835975
+24  chromedriver                        0x000000010f28500f chromedriver + 4898831
+25  libsystem_pthread.dylib             0x00007ff81b609259 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81b604c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 31, in test_4_OS
+    self.googletest.find_element("name", "q").send_keys(Keys.ENTER)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webelement.py", line 231, in send_keys
+    self._execute(
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webelement.py", line 404, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x000000010f293ae8 chromedriver + 4958952
+1   chromedriver                        0x000000010f28b7b3 chromedriver + 4925363
+2   chromedriver                        0x000000010ee4d1d6 chromedriver + 475606
+3   chromedriver                        0x000000010ee3544f chromedriver + 377935
+4   chromedriver                        0x000000010ee34ffb chromedriver + 376827
+5   chromedriver                        0x000000010ee3381a chromedriver + 370714
+6   chromedriver                        0x000000010ee33d4c chromedriver + 372044
+7   chromedriver                        0x000000010ee42b0b chromedriver + 432907
+8   chromedriver                        0x000000010ee44412 chromedriver + 439314
+9   chromedriver                        0x000000010ee55d74 chromedriver + 511348
+10  chromedriver                        0x000000010ee5b2fb chromedriver + 533243
+11  chromedriver                        0x000000010ee341a8 chromedriver + 373160
+12  chromedriver                        0x000000010ee55bbf chromedriver + 510911
+13  chromedriver                        0x000000010eed24a4 chromedriver + 1021092
+14  chromedriver                        0x000000010eeb69e3 chromedriver + 907747
+15  chromedriver                        0x000000010ee80aef chromedriver + 686831
+16  chromedriver                        0x000000010ee8200e chromedriver + 692238
+17  chromedriver                        0x000000010f24f9ad chromedriver + 4680109
+18  chromedriver                        0x000000010f254c12 chromedriver + 4701202
+19  chromedriver                        0x000000010f25b79f chromedriver + 4728735
+20  chromedriver                        0x000000010f255b7a chromedriver + 4705146
+21  chromedriver                        0x000000010f22827e chromedriver + 4518526
+22  chromedriver                        0x000000010f275908 chromedriver + 4835592
+23  chromedriver                        0x000000010f275a87 chromedriver + 4835975
+24  chromedriver                        0x000000010f28500f chromedriver + 4898831
+25  libsystem_pthread.dylib             0x00007ff81b609259 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81b604c7b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_5_testingtools</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x0000000103291ae8 chromedriver + 4958952
+1   chromedriver                        0x00000001032897b3 chromedriver + 4925363
+2   chromedriver                        0x0000000102e4b1d6 chromedriver + 475606
+3   chromedriver                        0x0000000102e3344f chromedriver + 377935
+4   chromedriver                        0x0000000102e32ffb chromedriver + 376827
+5   chromedriver                        0x0000000102e3181a chromedriver + 370714
+6   chromedriver                        0x0000000102e31d4c chromedriver + 372044
+7   chromedriver                        0x0000000102e40b0b chromedriver + 432907
+8   chromedriver                        0x0000000102e42412 chromedriver + 439314
+9   chromedriver                        0x0000000102e53d74 chromedriver + 511348
+10  chromedriver                        0x0000000102e592fb chromedriver + 533243
+11  chromedriver                        0x0000000102e321a8 chromedriver + 373160
+12  chromedriver                        0x0000000102e53bbf chromedriver + 510911
+13  chromedriver                        0x0000000102ed04a4 chromedriver + 1021092
+14  chromedriver                        0x0000000102eb49e3 chromedriver + 907747
+15  chromedriver                        0x0000000102e7eaef chromedriver + 686831
+16  chromedriver                        0x0000000102e8000e chromedriver + 692238
+17  chromedriver                        0x000000010324d9ad chromedriver + 4680109
+18  chromedriver                        0x0000000103252c12 chromedriver + 4701202
+19  chromedriver                        0x000000010325979f chromedriver + 4728735
+20  chromedriver                        0x0000000103253b7a chromedriver + 4705146
+21  chromedriver                        0x000000010322627e chromedriver + 4518526
+22  chromedriver                        0x0000000103273908 chromedriver + 4835592
+23  chromedriver                        0x0000000103273a87 chromedriver + 4835975
+24  chromedriver                        0x000000010328300f chromedriver + 4898831
+25  libsystem_pthread.dylib             0x00007ff81b609259 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81b604c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 35, in test_5_testingtools
+    self.googletest.find_element("name", "q").send_keys(Keys.ENTER)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webelement.py", line 231, in send_keys
+    self._execute(
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webelement.py", line 404, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x0000000103291ae8 chromedriver + 4958952
+1   chromedriver                        0x00000001032897b3 chromedriver + 4925363
+2   chromedriver                        0x0000000102e4b1d6 chromedriver + 475606
+3   chromedriver                        0x0000000102e3344f chromedriver + 377935
+4   chromedriver                        0x0000000102e32ffb chromedriver + 376827
+5   chromedriver                        0x0000000102e3181a chromedriver + 370714
+6   chromedriver                        0x0000000102e31d4c chromedriver + 372044
+7   chromedriver                        0x0000000102e40b0b chromedriver + 432907
+8   chromedriver                        0x0000000102e42412 chromedriver + 439314
+9   chromedriver                        0x0000000102e53d74 chromedriver + 511348
+10  chromedriver                        0x0000000102e592fb chromedriver + 533243
+11  chromedriver                        0x0000000102e321a8 chromedriver + 373160
+12  chromedriver                        0x0000000102e53bbf chromedriver + 510911
+13  chromedriver                        0x0000000102ed04a4 chromedriver + 1021092
+14  chromedriver                        0x0000000102eb49e3 chromedriver + 907747
+15  chromedriver                        0x0000000102e7eaef chromedriver + 686831
+16  chromedriver                        0x0000000102e8000e chromedriver + 692238
+17  chromedriver                        0x000000010324d9ad chromedriver + 4680109
+18  chromedriver                        0x0000000103252c12 chromedriver + 4701202
+19  chromedriver                        0x000000010325979f chromedriver + 4728735
+20  chromedriver                        0x0000000103253b7a chromedriver + 4705146
+21  chromedriver                        0x000000010322627e chromedriver + 4518526
+22  chromedriver                        0x0000000103273908 chromedriver + 4835592
+23  chromedriver                        0x0000000103273a87 chromedriver + 4835975
+24  chromedriver                        0x000000010328300f chromedriver + 4898831
+25  libsystem_pthread.dylib             0x00007ff81b609259 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81b604c7b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_6_ASI</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x000000010ec8eae8 chromedriver + 4958952
+1   chromedriver                        0x000000010ec867b3 chromedriver + 4925363
+2   chromedriver                        0x000000010e8481d6 chromedriver + 475606
+3   chromedriver                        0x000000010e83044f chromedriver + 377935
+4   chromedriver                        0x000000010e82fffb chromedriver + 376827
+5   chromedriver                        0x000000010e82e81a chromedriver + 370714
+6   chromedriver                        0x000000010e82ed4c chromedriver + 372044
+7   chromedriver                        0x000000010e83db0b chromedriver + 432907
+8   chromedriver                        0x000000010e83f412 chromedriver + 439314
+9   chromedriver                        0x000000010e850d74 chromedriver + 511348
+10  chromedriver                        0x000000010e8562fb chromedriver + 533243
+11  chromedriver                        0x000000010e82f1a8 chromedriver + 373160
+12  chromedriver                        0x000000010e850bbf chromedriver + 510911
+13  chromedriver                        0x000000010e8cd4a4 chromedriver + 1021092
+14  chromedriver                        0x000000010e8b19e3 chromedriver + 907747
+15  chromedriver                        0x000000010e87baef chromedriver + 686831
+16  chromedriver                        0x000000010e87d00e chromedriver + 692238
+17  chromedriver                        0x000000010ec4a9ad chromedriver + 4680109
+18  chromedriver                        0x000000010ec4fc12 chromedriver + 4701202
+19  chromedriver                        0x000000010ec5679f chromedriver + 4728735
+20  chromedriver                        0x000000010ec50b7a chromedriver + 4705146
+21  chromedriver                        0x000000010ec2327e chromedriver + 4518526
+22  chromedriver                        0x000000010ec70908 chromedriver + 4835592
+23  chromedriver                        0x000000010ec70a87 chromedriver + 4835975
+24  chromedriver                        0x000000010ec8000f chromedriver + 4898831
+25  libsystem_pthread.dylib             0x00007ff81b609259 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81b604c7b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/Project/Anchsft & Prospect/myprojects/firstpython/testsuite.py", line 39, in test_6_ASI
+    self.googletest.find_element("name", "q").send_keys(Keys.ENTER)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webelement.py", line 231, in send_keys
+    self._execute(
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webelement.py", line 404, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ayodamolaoyegbemi/Library/Python/3.11/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x000000010ec8eae8 chromedriver + 4958952
+1   chromedriver                        0x000000010ec867b3 chromedriver + 4925363
+2   chromedriver                        0x000000010e8481d6 chromedriver + 475606
+3   chromedriver                        0x000000010e83044f chromedriver + 377935
+4   chromedriver                        0x000000010e82fffb chromedriver + 376827
+5   chromedriver                        0x000000010e82e81a chromedriver + 370714
+6   chromedriver                        0x000000010e82ed4c chromedriver + 372044
+7   chromedriver                        0x000000010e83db0b chromedriver + 432907
+8   chromedriver                        0x000000010e83f412 chromedriver + 439314
+9   chromedriver                        0x000000010e850d74 chromedriver + 511348
+10  chromedriver                        0x000000010e8562fb chromedriver + 533243
+11  chromedriver                        0x000000010e82f1a8 chromedriver + 373160
+12  chromedriver                        0x000000010e850bbf chromedriver + 510911
+13  chromedriver                        0x000000010e8cd4a4 chromedriver + 1021092
+14  chromedriver                        0x000000010e8b19e3 chromedriver + 907747
+15  chromedriver                        0x000000010e87baef chromedriver + 686831
+16  chromedriver                        0x000000010e87d00e chromedriver + 692238
+17  chromedriver                        0x000000010ec4a9ad chromedriver + 4680109
+18  chromedriver                        0x000000010ec4fc12 chromedriver + 4701202
+19  chromedriver                        0x000000010ec5679f chromedriver + 4728735
+20  chromedriver                        0x000000010ec50b7a chromedriver + 4705146
+21  chromedriver                        0x000000010ec2327e chromedriver + 4518526
+22  chromedriver                        0x000000010ec70908 chromedriver + 4835592
+23  chromedriver                        0x000000010ec70a87 chromedriver + 4835975
+24  chromedriver                        0x000000010ec8000f chromedriver + 4898831
+25  libsystem_pthread.dylib             0x00007ff81b609259 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81b604c7b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 6, Pass: 1, Error: 5 -- Duration: 205.22 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
